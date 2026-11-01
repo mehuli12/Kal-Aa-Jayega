@@ -1,0 +1,374 @@
+{
+  "m02": {
+    "id": "m02",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "retried",
+    "error": null,
+    "extraction": {
+      "msg_type": "promise",
+      "material": "steel",
+      "date_expr": "parso morning",
+      "date_ref": "day_after",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 2,
+      "evidence": [],
+      "reason": "Supplier promises steel delivery to site the day after tomorrow morning (Wed 2026-10-21), with no vehicle or LR proof."
+    },
+    "promised_date": "2026-10-21"
+  },
+  "m29": {
+    "id": "m29",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "retried",
+    "error": null,
+    "extraction": {
+      "msg_type": "dispatch",
+      "material": "steel",
+      "date_expr": "11 baje tak",
+      "date_ref": "today",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 3,
+      "evidence": [
+        "WB-11-D-2290",
+        "Driver Manoj"
+      ],
+      "reason": "Supplier reports 8 MT of 25mm steel dispatched on vehicle WB-11-D-2290 with driver Manoj, arriving by 11 am today."
+    },
+    "promised_date": "2026-10-29"
+  },
+  "m05": {
+    "id": "m05",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "promise",
+      "material": "cement",
+      "date_expr": "kal",
+      "date_ref": "tomorrow",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 1,
+      "evidence": [],
+      "reason": "Supplier promises cement arrives \"kal\" with future tense (\"aa jayega\"), but gives no vehicle or dispatch proof; \"pakka\" does not raise the level."
+    },
+    "promised_date": "2026-10-21"
+  },
+  "m03": {
+    "id": "m03",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "retried",
+    "error": null,
+    "first_attempt_errors": [
+      "weekday must be set exactly when date_ref is 'weekday'",
+      "day_of_month must be set exactly when date_ref is 'day_of_month'"
+    ],
+    "extraction": {
+      "msg_type": "dispatch",
+      "material": "steel",
+      "date_expr": "Kal subah 7 baje tak",
+      "date_ref": "tomorrow",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 3,
+      "evidence": [
+        "Truck WB-23-C-4417",
+        "Driver Raju 98300-XXXXX"
+      ],
+      "reason": "Supplier says truck WB-23-C-4417 has left with 12 MT TMT, driver Raju, arriving by 7 AM tomorrow."
+    },
+    "promised_date": "2026-10-21"
+  },
+  "m10": {
+    "id": "m10",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "retried",
+    "error": null,
+    "first_attempt_errors": [
+      "weekday must be set exactly when date_ref is 'weekday'"
+    ],
+    "extraction": {
+      "msg_type": "promise",
+      "material": "cement",
+      "date_expr": "Kal",
+      "date_ref": "tomorrow",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 2,
+      "evidence": [],
+      "reason": "Supplier admits the delay (no vehicle available) and promises dispatch tomorrow, a specific day with no proof of dispatch."
+    },
+    "promised_date": "2026-10-23"
+  },
+  "m11": {
+    "id": "m11",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "retried",
+    "error": null,
+    "first_attempt_errors": [
+      "weekday='None' not in ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', None]"
+    ],
+    "extraction": {
+      "msg_type": "query",
+      "material": "steel",
+      "date_expr": "kal wala truck pahunch gaya na?",
+      "date_ref": "tomorrow",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "past",
+      "commitment_level": 0,
+      "evidence": [],
+      "reason": "Supplier is asking whether yesterday's truck reached site and asks site to sign the challan; no new delivery promise."
+    },
+    "promised_date": null
+  },
+  "m13": {
+    "id": "m13",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "dispatch",
+      "material": "sand",
+      "date_expr": "Kal",
+      "date_ref": "tomorrow",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "past",
+      "commitment_level": 2,
+      "evidence": [],
+      "reason": "Supplier says 2 lorries of baali (sand) left yesterday (\"gari pouchhe gechhe\", past tense), with a bill sent but no vehicle number, LR or driver proof."
+    },
+    "promised_date": null
+  },
+  "m16": {
+    "id": "m16",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "promise",
+      "material": "unknown",
+      "date_expr": "Monday ko",
+      "date_ref": "weekday",
+      "weekday": "Mon",
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 2,
+      "evidence": [],
+      "reason": "Supplier gives a new specific day (Monday) for dispatch after rain delay; no vehicle or LR proof, and material is not named."
+    },
+    "promised_date": "2026-10-26"
+  },
+  "m18": {
+    "id": "m18",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "delivered_claim",
+      "material": "cement",
+      "date_expr": "Kal",
+      "date_ref": "tomorrow",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "past",
+      "commitment_level": 0,
+      "evidence": [],
+      "reason": "Site says 200 bags of cement arrived \"kal\" (past tense \"aa gaya tha\"), so the date is yesterday; no vehicle or LR proof given."
+    },
+    "promised_date": null
+  },
+  "m19": {
+    "id": "m19",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "retried",
+    "error": null,
+    "first_attempt_errors": [
+      "weekday must be set exactly when date_ref is 'weekday'"
+    ],
+    "extraction": {
+      "msg_type": "promise",
+      "material": "unknown",
+      "date_expr": "kal",
+      "date_ref": "tomorrow",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 2,
+      "evidence": [],
+      "reason": "Supplier promises delivery tomorrow (\"kal pakka pahunch jayega\"); \"pakka\" does not raise the level, and no dispatch proof is given. Material not named in this message."
+    },
+    "promised_date": "2026-10-27"
+  },
+  "m20": {
+    "id": "m20",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "promise",
+      "material": "unknown",
+      "date_expr": "jaldi",
+      "date_ref": "vague",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 1,
+      "evidence": [],
+      "reason": "Supplier promises remaining material will be sent \"jaldi\" with no specific day; material not named."
+    },
+    "promised_date": null
+  },
+  "m21": {
+    "id": "m21",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "promise",
+      "material": "aggregate",
+      "date_expr": "Porshu",
+      "date_ref": "day_after",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 1,
+      "evidence": [],
+      "reason": "Supplier says aggregate will be sent the day after tomorrow (parso), with no vehicle or dispatch proof."
+    },
+    "promised_date": "2026-10-28"
+  },
+  "m24": {
+    "id": "m24",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "excuse",
+      "material": "rmc",
+      "date_expr": null,
+      "date_ref": "none",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "none",
+      "commitment_level": 0,
+      "evidence": [],
+      "reason": "Supplier says RMC permit not yet obtained and gives no new delivery date."
+    },
+    "promised_date": null
+  },
+  "m27": {
+    "id": "m27",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "promise",
+      "material": "cement",
+      "date_expr": "parso tak",
+      "date_ref": "day_after",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 1,
+      "evidence": [],
+      "reason": "Supplier promises the additional 200 bags of cement will arrive by the day after tomorrow, with no vehicle or dispatch proof."
+    },
+    "promised_date": "2026-10-30"
+  },
+  "m30": {
+    "id": "m30",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "excuse",
+      "material": "aggregate",
+      "date_expr": "aaj pouchhe jabe",
+      "date_ref": "today",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 0,
+      "evidence": [],
+      "reason": "Supplier blames yesterday's broken vehicle for delay; says aggregate will reach today, but gives no vehicle or dispatch proof."
+    },
+    "promised_date": "2026-10-29"
+  },
+  "m31": {
+    "id": "m31",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "ok",
+    "error": null,
+    "first_attempt_errors": null,
+    "extraction": {
+      "msg_type": "promise",
+      "material": "aggregate",
+      "date_expr": "ei week er moddhe",
+      "date_ref": "vague",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 1,
+      "evidence": [],
+      "reason": "Supplier promises stone chips will be delivered sometime this week, with no specific day and no dispatch proof."
+    },
+    "promised_date": null
+  },
+  "m32": {
+    "id": "m32",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "v1",
+    "status": "retried",
+    "error": null,
+    "first_attempt_errors": [
+      "weekday must be set exactly when date_ref is 'weekday'"
+    ],
+    "extraction": {
+      "msg_type": "dispatch",
+      "material": "cement",
+      "date_expr": "shaam tak",
+      "date_ref": "today",
+      "weekday": null,
+      "day_of_month": null,
+      "date_direction": "future",
+      "commitment_level": 2,
+      "evidence": [],
+      "reason": "Supplier says truck has left and will arrive by evening today, but gives no vehicle number, LR or driver proof."
+    },
+    "promised_date": "2026-10-30"
+  }
+}

@@ -1,0 +1,707 @@
+{
+  "summary": {
+    "msg_type": 13,
+    "material": 9,
+    "date_direction": 15,
+    "promised_date": 15,
+    "commitment_level": 10
+  },
+  "all_ok": 6,
+  "statuses": {
+    "ok": 11,
+    "retried": 4,
+    "needs_review": 0
+  },
+  "first_attempt_errors": {
+    "m03": [
+      "weekday must be set exactly when date_ref is 'weekday'",
+      "day_of_month must be set exactly when date_ref is 'day_of_month'"
+    ],
+    "m10": [
+      "weekday must be set exactly when date_ref is 'weekday'"
+    ],
+    "m19": [
+      "weekday must be set exactly when date_ref is 'weekday'"
+    ],
+    "m32": [
+      "weekday must be set exactly when date_ref is 'weekday'"
+    ]
+  },
+  "rows": [
+    {
+      "id": "m03",
+      "field": "msg_type",
+      "gold": "dispatch",
+      "pred": "dispatch",
+      "ok": true,
+      "text": "Truck WB-23-C-4417 nikal gaya, 12 MT TMT (12mm+16mm). Driver Raju 98300-XXXXX. Kal subah 7 baje tak.",
+      "notes": "TMT = steel. Vehicle no + driver = evidence. 'Kal subah' = arrival 21 Oct"
+    },
+    {
+      "id": "m03",
+      "field": "material",
+      "gold": "steel",
+      "pred": "steel",
+      "ok": true,
+      "text": "Truck WB-23-C-4417 nikal gaya, 12 MT TMT (12mm+16mm). Driver Raju 98300-XXXXX. Kal subah 7 baje tak.",
+      "notes": "TMT = steel. Vehicle no + driver = evidence. 'Kal subah' = arrival 21 Oct"
+    },
+    {
+      "id": "m03",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Truck WB-23-C-4417 nikal gaya, 12 MT TMT (12mm+16mm). Driver Raju 98300-XXXXX. Kal subah 7 baje tak.",
+      "notes": "TMT = steel. Vehicle no + driver = evidence. 'Kal subah' = arrival 21 Oct"
+    },
+    {
+      "id": "m03",
+      "field": "promised_date",
+      "gold": "2026-10-21",
+      "pred": "2026-10-21",
+      "ok": true,
+      "text": "Truck WB-23-C-4417 nikal gaya, 12 MT TMT (12mm+16mm). Driver Raju 98300-XXXXX. Kal subah 7 baje tak.",
+      "notes": "TMT = steel. Vehicle no + driver = evidence. 'Kal subah' = arrival 21 Oct"
+    },
+    {
+      "id": "m03",
+      "field": "commitment_level",
+      "gold": "3",
+      "pred": "3",
+      "ok": true,
+      "text": "Truck WB-23-C-4417 nikal gaya, 12 MT TMT (12mm+16mm). Driver Raju 98300-XXXXX. Kal subah 7 baje tak.",
+      "notes": "TMT = steel. Vehicle no + driver = evidence. 'Kal subah' = arrival 21 Oct"
+    },
+    {
+      "id": "m05",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "promise",
+      "ok": true,
+      "text": "Sir kal pakka aa jayega, tension mat lo.",
+      "notes": "'pakka' adds nothing, no proof. Material not named"
+    },
+    {
+      "id": "m05",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "cement",
+      "ok": false,
+      "text": "Sir kal pakka aa jayega, tension mat lo.",
+      "notes": "'pakka' adds nothing, no proof. Material not named"
+    },
+    {
+      "id": "m05",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Sir kal pakka aa jayega, tension mat lo.",
+      "notes": "'pakka' adds nothing, no proof. Material not named"
+    },
+    {
+      "id": "m05",
+      "field": "promised_date",
+      "gold": "2026-10-21",
+      "pred": "2026-10-21",
+      "ok": true,
+      "text": "Sir kal pakka aa jayega, tension mat lo.",
+      "notes": "'pakka' adds nothing, no proof. Material not named"
+    },
+    {
+      "id": "m05",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "1",
+      "ok": false,
+      "text": "Sir kal pakka aa jayega, tension mat lo.",
+      "notes": "'pakka' adds nothing, no proof. Material not named"
+    },
+    {
+      "id": "m10",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "promise",
+      "ok": true,
+      "text": "Sorry sir, gaadi nahi mili. Kal pakka bhejta hoon.",
+      "notes": "Excuse + new date = promise. 'bhejta hoon' = will SEND, not arrive - unsure if send date = promised date"
+    },
+    {
+      "id": "m10",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "cement",
+      "ok": false,
+      "text": "Sorry sir, gaadi nahi mili. Kal pakka bhejta hoon.",
+      "notes": "Excuse + new date = promise. 'bhejta hoon' = will SEND, not arrive - unsure if send date = promised date"
+    },
+    {
+      "id": "m10",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Sorry sir, gaadi nahi mili. Kal pakka bhejta hoon.",
+      "notes": "Excuse + new date = promise. 'bhejta hoon' = will SEND, not arrive - unsure if send date = promised date"
+    },
+    {
+      "id": "m10",
+      "field": "promised_date",
+      "gold": "2026-10-23",
+      "pred": "2026-10-23",
+      "ok": true,
+      "text": "Sorry sir, gaadi nahi mili. Kal pakka bhejta hoon.",
+      "notes": "Excuse + new date = promise. 'bhejta hoon' = will SEND, not arrive - unsure if send date = promised date"
+    },
+    {
+      "id": "m10",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "2",
+      "ok": true,
+      "text": "Sorry sir, gaadi nahi mili. Kal pakka bhejta hoon.",
+      "notes": "Excuse + new date = promise. 'bhejta hoon' = will SEND, not arrive - unsure if send date = promised date"
+    },
+    {
+      "id": "m11",
+      "field": "msg_type",
+      "gold": "query",
+      "pred": "query",
+      "ok": true,
+      "text": "Sir kal wala truck pahunch gaya na? Challan sign karke bhej dena.",
+      "notes": "Supplier asking if yesterday's truck arrived. Query or delivered_claim? Guide has no commitment level for queries, used 0"
+    },
+    {
+      "id": "m11",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "steel",
+      "ok": false,
+      "text": "Sir kal wala truck pahunch gaya na? Challan sign karke bhej dena.",
+      "notes": "Supplier asking if yesterday's truck arrived. Query or delivered_claim? Guide has no commitment level for queries, used 0"
+    },
+    {
+      "id": "m11",
+      "field": "date_direction",
+      "gold": "past",
+      "pred": "past",
+      "ok": true,
+      "text": "Sir kal wala truck pahunch gaya na? Challan sign karke bhej dena.",
+      "notes": "Supplier asking if yesterday's truck arrived. Query or delivered_claim? Guide has no commitment level for queries, used 0"
+    },
+    {
+      "id": "m11",
+      "field": "promised_date",
+      "gold": "",
+      "pred": "",
+      "ok": true,
+      "text": "Sir kal wala truck pahunch gaya na? Challan sign karke bhej dena.",
+      "notes": "Supplier asking if yesterday's truck arrived. Query or delivered_claim? Guide has no commitment level for queries, used 0"
+    },
+    {
+      "id": "m11",
+      "field": "commitment_level",
+      "gold": "0",
+      "pred": "0",
+      "ok": true,
+      "text": "Sir kal wala truck pahunch gaya na? Challan sign karke bhej dena.",
+      "notes": "Supplier asking if yesterday's truck arrived. Query or delivered_claim? Guide has no commitment level for queries, used 0"
+    },
+    {
+      "id": "m13",
+      "field": "msg_type",
+      "gold": "delivered_claim",
+      "pred": "dispatch",
+      "ok": false,
+      "text": "Kal gari pouchhe gechhe, 2 lorry. Bill pathachhi.",
+      "notes": "'gari pouchhe gechhe' = arrived yesterday. Guide has no level for delivered claims; used 2 (claim, no proof)"
+    },
+    {
+      "id": "m13",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "sand",
+      "ok": false,
+      "text": "Kal gari pouchhe gechhe, 2 lorry. Bill pathachhi.",
+      "notes": "'gari pouchhe gechhe' = arrived yesterday. Guide has no level for delivered claims; used 2 (claim, no proof)"
+    },
+    {
+      "id": "m13",
+      "field": "date_direction",
+      "gold": "past",
+      "pred": "past",
+      "ok": true,
+      "text": "Kal gari pouchhe gechhe, 2 lorry. Bill pathachhi.",
+      "notes": "'gari pouchhe gechhe' = arrived yesterday. Guide has no level for delivered claims; used 2 (claim, no proof)"
+    },
+    {
+      "id": "m13",
+      "field": "promised_date",
+      "gold": "",
+      "pred": "",
+      "ok": true,
+      "text": "Kal gari pouchhe gechhe, 2 lorry. Bill pathachhi.",
+      "notes": "'gari pouchhe gechhe' = arrived yesterday. Guide has no level for delivered claims; used 2 (claim, no proof)"
+    },
+    {
+      "id": "m13",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "2",
+      "ok": true,
+      "text": "Kal gari pouchhe gechhe, 2 lorry. Bill pathachhi.",
+      "notes": "'gari pouchhe gechhe' = arrived yesterday. Guide has no level for delivered claims; used 2 (claim, no proof)"
+    },
+    {
+      "id": "m16",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "promise",
+      "ok": true,
+      "text": "Baarish ki wajah se loading nahi hua. Monday ko bhejenge.",
+      "notes": "Excuse + new date = promise. Monday after Sat 24 Oct = 26 Oct. 'bhejenge' = send, not arrive"
+    },
+    {
+      "id": "m16",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "unknown",
+      "ok": true,
+      "text": "Baarish ki wajah se loading nahi hua. Monday ko bhejenge.",
+      "notes": "Excuse + new date = promise. Monday after Sat 24 Oct = 26 Oct. 'bhejenge' = send, not arrive"
+    },
+    {
+      "id": "m16",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Baarish ki wajah se loading nahi hua. Monday ko bhejenge.",
+      "notes": "Excuse + new date = promise. Monday after Sat 24 Oct = 26 Oct. 'bhejenge' = send, not arrive"
+    },
+    {
+      "id": "m16",
+      "field": "promised_date",
+      "gold": "2026-10-26",
+      "pred": "2026-10-26",
+      "ok": true,
+      "text": "Baarish ki wajah se loading nahi hua. Monday ko bhejenge.",
+      "notes": "Excuse + new date = promise. Monday after Sat 24 Oct = 26 Oct. 'bhejenge' = send, not arrive"
+    },
+    {
+      "id": "m16",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "2",
+      "ok": true,
+      "text": "Baarish ki wajah se loading nahi hua. Monday ko bhejenge.",
+      "notes": "Excuse + new date = promise. Monday after Sat 24 Oct = 26 Oct. 'bhejenge' = send, not arrive"
+    },
+    {
+      "id": "m18",
+      "field": "msg_type",
+      "gold": "delivered_claim",
+      "pred": "delivered_claim",
+      "ok": true,
+      "text": "Kal cement aa gaya tha, 200 bags. Thanks.",
+      "notes": "Site engineer confirms delivery - stronger than a supplier claim, but guide has no level for it; used 2"
+    },
+    {
+      "id": "m18",
+      "field": "material",
+      "gold": "cement",
+      "pred": "cement",
+      "ok": true,
+      "text": "Kal cement aa gaya tha, 200 bags. Thanks.",
+      "notes": "Site engineer confirms delivery - stronger than a supplier claim, but guide has no level for it; used 2"
+    },
+    {
+      "id": "m18",
+      "field": "date_direction",
+      "gold": "past",
+      "pred": "past",
+      "ok": true,
+      "text": "Kal cement aa gaya tha, 200 bags. Thanks.",
+      "notes": "Site engineer confirms delivery - stronger than a supplier claim, but guide has no level for it; used 2"
+    },
+    {
+      "id": "m18",
+      "field": "promised_date",
+      "gold": "",
+      "pred": "",
+      "ok": true,
+      "text": "Kal cement aa gaya tha, 200 bags. Thanks.",
+      "notes": "Site engineer confirms delivery - stronger than a supplier claim, but guide has no level for it; used 2"
+    },
+    {
+      "id": "m18",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "0",
+      "ok": false,
+      "text": "Kal cement aa gaya tha, 200 bags. Thanks.",
+      "notes": "Site engineer confirms delivery - stronger than a supplier claim, but guide has no level for it; used 2"
+    },
+    {
+      "id": "m19",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "promise",
+      "ok": true,
+      "text": "Haan sir, woh kal pakka pahunch jayega.",
+      "notes": "'woh' - material not named. pakka, no proof"
+    },
+    {
+      "id": "m19",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "unknown",
+      "ok": true,
+      "text": "Haan sir, woh kal pakka pahunch jayega.",
+      "notes": "'woh' - material not named. pakka, no proof"
+    },
+    {
+      "id": "m19",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Haan sir, woh kal pakka pahunch jayega.",
+      "notes": "'woh' - material not named. pakka, no proof"
+    },
+    {
+      "id": "m19",
+      "field": "promised_date",
+      "gold": "2026-10-27",
+      "pred": "2026-10-27",
+      "ok": true,
+      "text": "Haan sir, woh kal pakka pahunch jayega.",
+      "notes": "'woh' - material not named. pakka, no proof"
+    },
+    {
+      "id": "m19",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "2",
+      "ok": true,
+      "text": "Haan sir, woh kal pakka pahunch jayega.",
+      "notes": "'woh' - material not named. pakka, no proof"
+    },
+    {
+      "id": "m20",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "promise",
+      "ok": true,
+      "text": "Baaki material jaldi bhej denge sir.",
+      "notes": "'baaki material' - not named. 'jaldi' = vague, no date"
+    },
+    {
+      "id": "m20",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "unknown",
+      "ok": true,
+      "text": "Baaki material jaldi bhej denge sir.",
+      "notes": "'baaki material' - not named. 'jaldi' = vague, no date"
+    },
+    {
+      "id": "m20",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Baaki material jaldi bhej denge sir.",
+      "notes": "'baaki material' - not named. 'jaldi' = vague, no date"
+    },
+    {
+      "id": "m20",
+      "field": "promised_date",
+      "gold": "",
+      "pred": "",
+      "ok": true,
+      "text": "Baaki material jaldi bhej denge sir.",
+      "notes": "'baaki material' - not named. 'jaldi' = vague, no date"
+    },
+    {
+      "id": "m20",
+      "field": "commitment_level",
+      "gold": "1",
+      "pred": "1",
+      "ok": true,
+      "text": "Baaki material jaldi bhej denge sir.",
+      "notes": "'baaki material' - not named. 'jaldi' = vague, no date"
+    },
+    {
+      "id": "m21",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "promise",
+      "ok": true,
+      "text": "Porshu aggregate pathabo, 20mm.",
+      "notes": "porshu = +2. 'pathabo' = will send"
+    },
+    {
+      "id": "m21",
+      "field": "material",
+      "gold": "aggregate",
+      "pred": "aggregate",
+      "ok": true,
+      "text": "Porshu aggregate pathabo, 20mm.",
+      "notes": "porshu = +2. 'pathabo' = will send"
+    },
+    {
+      "id": "m21",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Porshu aggregate pathabo, 20mm.",
+      "notes": "porshu = +2. 'pathabo' = will send"
+    },
+    {
+      "id": "m21",
+      "field": "promised_date",
+      "gold": "2026-10-28",
+      "pred": "2026-10-28",
+      "ok": true,
+      "text": "Porshu aggregate pathabo, 20mm.",
+      "notes": "porshu = +2. 'pathabo' = will send"
+    },
+    {
+      "id": "m21",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "1",
+      "ok": false,
+      "text": "Porshu aggregate pathabo, 20mm.",
+      "notes": "porshu = +2. 'pathabo' = will send"
+    },
+    {
+      "id": "m24",
+      "field": "msg_type",
+      "gold": "excuse",
+      "pred": "excuse",
+      "ok": true,
+      "text": "RMC ke liye permit nahi mila abhi. Dekhte hain.",
+      "notes": "Permit excuse, 'dekhte hain' = no commitment"
+    },
+    {
+      "id": "m24",
+      "field": "material",
+      "gold": "rmc",
+      "pred": "rmc",
+      "ok": true,
+      "text": "RMC ke liye permit nahi mila abhi. Dekhte hain.",
+      "notes": "Permit excuse, 'dekhte hain' = no commitment"
+    },
+    {
+      "id": "m24",
+      "field": "date_direction",
+      "gold": "none",
+      "pred": "none",
+      "ok": true,
+      "text": "RMC ke liye permit nahi mila abhi. Dekhte hain.",
+      "notes": "Permit excuse, 'dekhte hain' = no commitment"
+    },
+    {
+      "id": "m24",
+      "field": "promised_date",
+      "gold": "",
+      "pred": "",
+      "ok": true,
+      "text": "RMC ke liye permit nahi mila abhi. Dekhte hain.",
+      "notes": "Permit excuse, 'dekhte hain' = no commitment"
+    },
+    {
+      "id": "m24",
+      "field": "commitment_level",
+      "gold": "0",
+      "pred": "0",
+      "ok": true,
+      "text": "RMC ke liye permit nahi mila abhi. Dekhte hain.",
+      "notes": "Permit excuse, 'dekhte hain' = no commitment"
+    },
+    {
+      "id": "m27",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "promise",
+      "ok": true,
+      "text": "Woh bhi parso tak aa jayega sir.",
+      "notes": "'woh bhi' - material not named. 'parso tak' = by 30 Oct"
+    },
+    {
+      "id": "m27",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "cement",
+      "ok": false,
+      "text": "Woh bhi parso tak aa jayega sir.",
+      "notes": "'woh bhi' - material not named. 'parso tak' = by 30 Oct"
+    },
+    {
+      "id": "m27",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Woh bhi parso tak aa jayega sir.",
+      "notes": "'woh bhi' - material not named. 'parso tak' = by 30 Oct"
+    },
+    {
+      "id": "m27",
+      "field": "promised_date",
+      "gold": "2026-10-30",
+      "pred": "2026-10-30",
+      "ok": true,
+      "text": "Woh bhi parso tak aa jayega sir.",
+      "notes": "'woh bhi' - material not named. 'parso tak' = by 30 Oct"
+    },
+    {
+      "id": "m27",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "1",
+      "ok": false,
+      "text": "Woh bhi parso tak aa jayega sir.",
+      "notes": "'woh bhi' - material not named. 'parso tak' = by 30 Oct"
+    },
+    {
+      "id": "m30",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "excuse",
+      "ok": false,
+      "text": "Dada aggregate aaj pouchhe jabe, kal gari kharap chhilo.",
+      "notes": "Has both: aaj (delivery, future) and kal (excuse, past). Labelled the delivery one"
+    },
+    {
+      "id": "m30",
+      "field": "material",
+      "gold": "aggregate",
+      "pred": "aggregate",
+      "ok": true,
+      "text": "Dada aggregate aaj pouchhe jabe, kal gari kharap chhilo.",
+      "notes": "Has both: aaj (delivery, future) and kal (excuse, past). Labelled the delivery one"
+    },
+    {
+      "id": "m30",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Dada aggregate aaj pouchhe jabe, kal gari kharap chhilo.",
+      "notes": "Has both: aaj (delivery, future) and kal (excuse, past). Labelled the delivery one"
+    },
+    {
+      "id": "m30",
+      "field": "promised_date",
+      "gold": "2026-10-29",
+      "pred": "2026-10-29",
+      "ok": true,
+      "text": "Dada aggregate aaj pouchhe jabe, kal gari kharap chhilo.",
+      "notes": "Has both: aaj (delivery, future) and kal (excuse, past). Labelled the delivery one"
+    },
+    {
+      "id": "m30",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "0",
+      "ok": false,
+      "text": "Dada aggregate aaj pouchhe jabe, kal gari kharap chhilo.",
+      "notes": "Has both: aaj (delivery, future) and kal (excuse, past). Labelled the delivery one"
+    },
+    {
+      "id": "m31",
+      "field": "msg_type",
+      "gold": "promise",
+      "pred": "promise",
+      "ok": true,
+      "text": "New Town e stone chips ei week er moddhe hoye jabe.",
+      "notes": "stone chips = aggregate. 'ei week er moddhe' = vague, no specific date"
+    },
+    {
+      "id": "m31",
+      "field": "material",
+      "gold": "aggregate",
+      "pred": "aggregate",
+      "ok": true,
+      "text": "New Town e stone chips ei week er moddhe hoye jabe.",
+      "notes": "stone chips = aggregate. 'ei week er moddhe' = vague, no specific date"
+    },
+    {
+      "id": "m31",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "New Town e stone chips ei week er moddhe hoye jabe.",
+      "notes": "stone chips = aggregate. 'ei week er moddhe' = vague, no specific date"
+    },
+    {
+      "id": "m31",
+      "field": "promised_date",
+      "gold": "",
+      "pred": "",
+      "ok": true,
+      "text": "New Town e stone chips ei week er moddhe hoye jabe.",
+      "notes": "stone chips = aggregate. 'ei week er moddhe' = vague, no specific date"
+    },
+    {
+      "id": "m31",
+      "field": "commitment_level",
+      "gold": "1",
+      "pred": "1",
+      "ok": true,
+      "text": "New Town e stone chips ei week er moddhe hoye jabe.",
+      "notes": "stone chips = aggregate. 'ei week er moddhe' = vague, no specific date"
+    },
+    {
+      "id": "m32",
+      "field": "msg_type",
+      "gold": "dispatch",
+      "pred": "dispatch",
+      "ok": true,
+      "text": "Truck nikal gaya hai sir, shaam tak pahunch jayega.",
+      "notes": "'truck nikal gaya' with no vehicle no = level 2. 'shaam tak' = today"
+    },
+    {
+      "id": "m32",
+      "field": "material",
+      "gold": "unknown",
+      "pred": "cement",
+      "ok": false,
+      "text": "Truck nikal gaya hai sir, shaam tak pahunch jayega.",
+      "notes": "'truck nikal gaya' with no vehicle no = level 2. 'shaam tak' = today"
+    },
+    {
+      "id": "m32",
+      "field": "date_direction",
+      "gold": "future",
+      "pred": "future",
+      "ok": true,
+      "text": "Truck nikal gaya hai sir, shaam tak pahunch jayega.",
+      "notes": "'truck nikal gaya' with no vehicle no = level 2. 'shaam tak' = today"
+    },
+    {
+      "id": "m32",
+      "field": "promised_date",
+      "gold": "2026-10-30",
+      "pred": "2026-10-30",
+      "ok": true,
+      "text": "Truck nikal gaya hai sir, shaam tak pahunch jayega.",
+      "notes": "'truck nikal gaya' with no vehicle no = level 2. 'shaam tak' = today"
+    },
+    {
+      "id": "m32",
+      "field": "commitment_level",
+      "gold": "2",
+      "pred": "2",
+      "ok": true,
+      "text": "Truck nikal gaya hai sir, shaam tak pahunch jayega.",
+      "notes": "'truck nikal gaya' with no vehicle no = level 2. 'shaam tak' = today"
+    }
+  ]
+}
